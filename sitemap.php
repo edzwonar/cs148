@@ -28,6 +28,7 @@
                 font-size: 18px;
             }
             
+            
             a:link {
                font-family: "Century Gothic";
                text-decoration: underline;
@@ -39,14 +40,14 @@
     </head>
     <body>
         <h1>Emilie Dzwonar's CS148 Sitemap</h1>
-        <ul>
-            <li><a href="tryme.php">tryme.php</a></li>
-            <li>Assignment 1.0</li>
-                <ul>
+        
+        <h3><a href="tryme.php">tryme.php</a></h3>
+            <h3>Assignment 1.0</h3>
+            <ul>
                     <li><a href="assignment1.0/index.php">index.php</a></li>
                     <li><a href="assignment1.0/tables.php">tables.php</a></li>
-                </ul>
-            <li>Assignment 2.0</li>
+            </ul>
+            <h3>Assignment 2.0</h3>
             <ul>
                 <li><a href="assignment2.0/select.php">select.php</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=1">q01</a></li>
@@ -57,12 +58,22 @@
                 <li><a href="assignment2.0/tables.php?getRecordsFor=6">q06</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=7">q07</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=8">q08</a></li>
-                <li><a href="aassignment2.0/tables.php?getRecordsFor=9">q09</a></li>
+                <li><a href="assignment2.0/tables.php?getRecordsFor=9">q09</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=10">q10</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=11">q11</a></li>
                 <li><a href="assignment2.0/tables.php?getRecordsFor=12">q12</a></li>
             </ul>
-        </ul>
+            <h3>Assignment 3.0</h3>
+            <ul>
+                <li><a href="assignment3.0/join.php">join.php</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=1">q01</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=2">q02</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=3">q03</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=4">q04</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=5">q05</a></li>
+                <li><a href="assignment3.0/query.php?getRecordsFor=6">q06</a></li>
+            </ul>
+        
         
     </body>
 </html>

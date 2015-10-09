@@ -1,0 +1,139 @@
+/* 
+    Created on : Jun 10, 2015, 10:27:26 AM
+    Author     : Emilie Dzwonar
+*/
+@import url('reset.css');
+/*------------------------   standard elements  ----------------------------- */
+body{
+    margin: 5% 5% 5% 5%;
+    background-color: azure;
+}
+article{
+    padding: 2em;
+}
+figcaption {
+    color: #839e99;
+    font-style: italic;
+    text-align: center;
+}
+
+header{
+    overflow: auto; /* forces header to fit to figure */
+}
+
+
+header .float_left{
+    margin-top: 0;
+}
+
+/*header h1{
+    padding-bottom: 2em;
+    padding-top: 75px;
+}*/
+
+section{
+    padding: 2em;
+    width: 40%;  
+}
+
+/*------------------------   classes           ------------------------------ */
+.float_left {
+    float: left;
+    margin: 1em 1em 1em 0;
+    padding: 0.5em;
+    height: 400px;
+}
+
+.even{
+    background-color: whitesmoke;
+}
+
+.odd{
+    background-color: #ffffff;
+}
+
+.small {
+    width: 150px;
+}
+
+/*------------------------   nav section only  ------------------------------ */
+nav ol li{
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 2em;
+}
+
+/*------------------------   table page  only  ------------------------------ */
+#query table aside{ 
+    float: left; 
+    margin-left: 2em;            
+}
+
+#queryTitle {
+    position: relative;
+    top: -125px;
+    left: -425px; 
+    font-family: "Century Gothic";
+    line-height: 130%;
+}
+
+#query table{
+    height: 400px; 
+    float: left; 
+    border: 1px solid #000;
+    width: 800px;
+}
+#query table{
+    border-collapse: collapse;
+}
+
+#query table td {
+    border: thin #000080 solid;
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+
+#query table th{
+    text-align: left;
+    background-color: darkcyan;
+    color: #fff;
+    padding: 3px;
+}
+
+
+/*--------------------------   select page   -----------------------------*/
+
+#join h1 {
+    font-size: 50px;
+    font-family: "Rockwell";
+    position: relative;
+    left: 50px;
+}
+
+#join article {
+    background-color: #fff;
+    opacity: .8;
+    border-radius: 10px;
+}
+
+#join hr {
+   background-color: cornflowerblue;
+   height: 2.5px;
+}
+#join ul li { list-style-type: circle;
+                line-height: 200%;
+}
+#join ul li a:link {
+    font-family: "Century Gothic";
+    color: cornflowerblue;
+    font-size: 20px;
+}
+
+#join ul li a:visited {
+    color: darkgoldenrod;
+}
+
+#join ul li a:hover {
+    font-weight: bold;
+}

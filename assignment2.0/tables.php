@@ -67,13 +67,28 @@ $columns=0;
             $columns = 1;
             break;
         case(8):
-            $query = "SELECT DISTINCT fldBuilding, SUM(fldSection) FROM tblSections GROUPBY fldBuilding";
-            print $thisDatabaseReader->testquery($query,"",0,0,0,0,false,false);
+            $query = "SELECT DISTINCT fldBuilding, COUNT(fldSection) FROM tblSections GROUP BY fldBuilding";
             $info2 = $thisDatabaseReader->select($query,"",0,0,0,0,false,false);
             $columns = 2;
             break;
-        
-    }     
+        case(9):
+            $query = "SELECT DISTINCT fldBuilding, COUNT(fldNumStudents) FROM tblSections WHERE fldDays LIKE '%W%' GROUP BY fldBuilding";
+            $info2 = $thisDatabaseReader->select($query,"",1,0,2,0,false,false);
+            $columns = 2;
+            break;
+        case(10):
+            $query = "SELECT DISTINCT fldBuilding, COUNT(fldNumStudents) FROM tblSections WHERE fldDays LIKE '%F%' GROUP BY fldBuilding";
+            $info2 = $thisDatabaseReader->select($query,"",1,0,2,0,false,false);
+            $columns = 2;
+            break;
+        case(11):
+            $query = "SELECT DISTINCT fnkCourseId, COUNT(fldSection) FROM tblSections WHERE COUNT(fldSection) > 50 GROUP BY fnkCourseId";
+            print $thisDatabaseReader->testquery($query,"",1,0,0,1,false,false);
+            $info2 = $thisDatabaseReader->select($query,"",1,0,0,1,false,false);
+            $columns = 1;
+    }
+    
+    
     
     //function highlight($info2, $columns) {
     $highlight = 0; // used to highlight alternate rows
